@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'maven'
+}
+
+sourceCompatibility = 1.8
+
+group = 'com.github.swapUniba'
+version = '0.0.1'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+    compile 'com.github.swapUniba:crowd-pulse-tokenize:0.0.1'
+    compile 'org.apache.opennlp:opennlp-tools:1.6.0'
+}
