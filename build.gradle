@@ -15,7 +15,11 @@ repositories {
     }
 }
 
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
 dependencies {
-    compile 'com.github.swapUniba:crowd-pulse-tokenize:0.0.1'
+    compile 'com.github.swapUniba:crowd-pulse-tokenize:master-SNAPSHOT'
     compile 'org.apache.opennlp:opennlp-tools:1.6.0'
 }
